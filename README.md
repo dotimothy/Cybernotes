@@ -1,3 +1,3 @@
-# H1 Cybernotes
+# Cybernotes
 
-# H2 The Online Interactive Video Conferencing Platform for Musicians
+## The Online Interactive Video Conferencing Platform for Musicians
