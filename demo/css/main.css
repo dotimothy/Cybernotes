@@ -10,6 +10,7 @@ video {
 
 .button {
   background-color: #ffd700;
+  font: impact;
   border: none;
   color: black;
   padding: 15px 32px;
@@ -19,4 +20,14 @@ video {
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
+}
+
+.button:hover {
+	background-color: #c0c0c0
+}
+
+.button:active {
+  background-color: #ffd700;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
