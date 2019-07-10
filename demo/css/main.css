@@ -20,6 +20,7 @@ video {
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
+  box-shadow: 0 9px #666;
 }
 
 .button:hover {
