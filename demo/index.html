@@ -2,24 +2,27 @@
 <html>
 
 <head>
-  <title>Cybernotes Demo</title>
-  <link rel="stylesheet" href="css/main.css" />
-  <link rel="shortcut icon" type="image/png" href="images/logo.png" />
+
+  <title>Realtime communication with WebRTC</title>
+
+  <link rel="stylesheet" href="/css/main.css" />
+
 </head>
 
 <body>
-  <h1>Cybernotes Demo</h1>
-  <h2>Click the Start Button to see your camera feed, click call to see the remote feed! </h2>
-  <video id="localVideo" autoplay playsinline></video>
-  <video id="remoteVideo" autoplay playsinline></video>
 
-  <div>
-    <button id="startButton">Start</button>
-    <button id="callButton">Call</button>
-    <button id="hangupButton">Hang Up</button>
+  <h1>Realtime communication with WebRTC</h1>
+
+  <div id="videos">
+    <video id="localVideo" autoplay muted playsinline></video>
+    <video id="remoteVideo" autoplay playsinline></video>
   </div>
 
+  <!-- This file is automatically added/served when running "node index.js". -->
+  <script src="/socket.io/socket.io.js"></script>
   <script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
   <script src="js/main.js"></script>
+
 </body>
+
 </html>

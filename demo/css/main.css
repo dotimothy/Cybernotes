@@ -1,8 +1,8 @@
 body {
-  font-family: impact;
+  font-family: sans-serif;
 }
 
 video {
   max-width: 100%;
-  width: 720px;
+  width: 320px;
 }
