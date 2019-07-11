@@ -11,11 +11,22 @@
 
 <body>
 
-  <h1>Cybernotes Demo</h1>
+  <h1>Cybernotes Video Demo!</h1>
+  <h1> Be in the call, then wait for the client to show up and say hi!
 
   <div id="videos">
     <video id="localVideo" autoplay muted playsinline></video>
     <video id="remoteVideo" autoplay playsinline></video>
+  </div>
+
+  <textarea id="dataChannelSend"
+    placeholder="Press Start, enter some text, then press Send."></textarea>
+  <textarea id="dataChannelReceive"></textarea>
+
+  <div id="buttons">
+    <button id="startButton">Start</button>
+    <button id="sendButton">Send</button>
+    <button id="closeButton">Stop</button>
   </div>
 
   <!-- This file is automatically added/served when running "node index.js". -->
