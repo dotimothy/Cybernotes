@@ -5,7 +5,8 @@
 
   <title>Cybernotes: Video Demo</title>
 
-  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="main.css" />
+  <link rel="shortcut icon" type="image/png" href="logo.png" />
 
 </head>
 
@@ -14,38 +15,42 @@
   <h1>Cybernotes Video Demo!</h1>
   <h1> Be in the call, then wait for the client to show up and say hi!
 
-  <div id="videos">
-    <video id="localVideo" autoplay muted playsinline></video>
-    <video id="remoteVideo" autoplay playsinline></video>
-  </div>
+    <div id="videos">
+      <video id="localVideo" autoplay muted playsinline></video>
+      <video id="remoteVideo" autoplay playsinline></video>
+    </div>
 
-  <textarea id="dataChannelSend"
+    <textarea id="dataChannelSend"
     placeholder="Press Start, enter some text, then press Send."></textarea>
-  <textarea id="dataChannelReceive"></textarea>
+    <textarea id="dataChannelReceive"></textarea>
 
-  <div id="buttons">
-    <button id="startButton">Start</button>
-    <button id="sendButton">Send</button>
-    <button id="closeButton">Stop</button>
-    <br> </br>
-  </div>
+    <div id="buttons">
+      <button id="startButton">Start</button>
+      <button id="sendButton">Send</button>
+      <button id="closeButton">Stop</button>
+      <br> </br>
+    </div>
 
- <embed src="tuner/index.html" width="100%" height="500px">
+    <h1>Tuner: </h1>
 
- <!--Scripts for Demo-->
-  <script src="/socket.io/socket.io.js"></script>
-  <script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
-  <script src="js/main.js"></script>
-  <!--Tuner Scripts-->
-  <script src="https://cdn.bootcss.com/sweetalert/2.1.0/sweetalert.min.js"></script>
-  <script src="aubio.js"></script>
-  <script src="tuner.js"></script>
-  <script src="meter.js"></script>
-  <script src="frequency-bars.js"></script>
-  <script src="notes.js"></script>
-  <script src="app.js"></script>
+    <embed src="tuner/index.html" width="100%" height="500px">
+
+      <h1>Metronome: </h1>
+
+      <!--Scripts for Demo-->
+      <script src="/socket.io/socket.io.js"></script>
+      <script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
+      <script src="main.js"></script>
+      <!--Tuner Scripts-->
+      <script src="https://cdn.bootcss.com/sweetalert/2.1.0/sweetalert.min.js"></script>
+      <script src="aubio.js"></script>
+      <script src="tuner.js"></script>
+      <script src="meter.js"></script>
+      <script src="frequency-bars.js"></script>
+      <script src="notes.js"></script>
+      <script src="app.js"></script>
 
 
-</body>
+    </body>
 
-</html>
+    </html>
