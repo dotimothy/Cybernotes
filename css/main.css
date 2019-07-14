@@ -1,8 +1,11 @@
+
 body {
-  font-family: Lato;
+  font-family: courier new;
+  font-size: 75%;
 }
 
 video {
-  max-width: 100%;
+  max-width: 50%;
   width: 480px;
 }
+
