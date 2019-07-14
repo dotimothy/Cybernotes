@@ -1,6 +1,6 @@
 body {
-  font-family: impact;
-  color: #c0c0c0;
+  font-family: courier new;
+  color: #000000;
 }
 
 video {
@@ -10,7 +10,7 @@ video {
 
 .button {
   background-color: #ffd700;
-  font: impact;
+  font: courier new;
   border: none;
   color: black;
   padding: 15px 32px;
