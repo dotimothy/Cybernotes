@@ -10,6 +10,8 @@
 .lib .lib-eez3{font-weight:bold;font-size:32px;font-family:"Courier New", Courier, monospace !important;;text-align:left;vertical-align:top}
 </style>
 
+<iframe id="sheetmusic" style="display:none;" width=50% height=500px></iframe>
+
 <table id="lib" style="display:block;" class="lib">
   <tr>
     <th class="lib-eez3">Choose Your Instrument:</th>
@@ -143,7 +145,7 @@
     <td class="euph-ods8">Author</td>
   </tr>
   <tr>
-    <td class="euph-l35t">40 Progressive Etudes for Trombone</td>
+    <td class="euph-l35t"><a href="#" onclick="createSheet('euph', 'https://drive.google.com/file/d/1w3Lto43eT3nMTJKD6gG8VUdES6UjlR5F/preview')">40 Progressive Etudes for Trombone</td>
     <td class="euph-5ozq">Sigmund Hering</td>
   </tr>
   <tr>
@@ -244,22 +246,19 @@
   </tr>
 </table>
 
-
 <!--Scripts to hide/unhide the tables--> 
 <script language="javascript">
 function switchTable(x,y) {
     var one = document.getElementById(x); 
     one.style.display="none";
     var two = document.getElementById(y);
-    two.style.display="table";
+    two.style.display="block";
 }
 
-function createSheet(link) {
-  var ifrm = document.createElement("iframe");
-        ifrm.setAttribute("src", "http://google.com/");
-        ifrm.style.width = "640px";
-        ifrm.style.height = "480px";
-        document.body.appendChild(ifrm);
+function createSheet(tab,link) {
+  var ifrm = document.getElementById('sheetmusic');
+        ifrm.setAttribute("src", link);
+        switchTable(tab, 'sheetmusic');
 }
 
 </script>
