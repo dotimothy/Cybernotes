@@ -33,7 +33,7 @@
     <td class="lib-10l6">Clarinet</td>
   </tr>
   <tr>
-    <td class="lib-10l6"><a href="javascript:Unhide(euph);">Euphonium/Baritone</a></td>
+    <td class="lib-10l6"><a href="javascript:toggleTable(euph);">Euphonium/Baritone</a></td>
   </tr>
   <tr>
     <td class="lib-10l6">Flute/Piccolo </td>
@@ -247,21 +247,12 @@
 
 <!--Scripts to hide/unhide the tables--> 
 <script language="javascript">
-  function Unhide(n)
-{
- var items = document.getElementsByTagName('n');
- for ( var x = 0; x < items.length; x++)
- {
-     var item = items[x]; 
-     if (item.getAttribute('hidden') == 'true')
-     {
-        item.setAttribute('hidden', 'false');
-     }
-     else
-     {
-         item.setAttribute('hidden', 'true');
-     }
- }
+function toggleTable(x) {
+    var lib = document.getElementById("lib");
+    lib.setAttribute("hidden", "true");
+    var inst  = document.getElementById(x);
+    inst.setAttribute("hidden","false");
+    inst.style.display="table";
 }
 </script>
 
