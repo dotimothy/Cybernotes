@@ -10,7 +10,7 @@
 .lib .lib-eez3{font-weight:bold;font-size:32px;font-family:"Courier New", Courier, monospace !important;;text-align:left;vertical-align:top}
 </style>
 
-<iframe id="sheetmusic" style="display:none;" width="100%" height="750px"></iframe>
+<iframe id="sheetmusic" style="display:none;" width="40%" height="750px"></iframe>
 
 <table id="lib" style="display:block;" class="lib">
   <tr>
@@ -95,6 +95,7 @@
 .band .band-52hf{font-weight:bold;font-size:24px;font-family:"Courier New", Courier, monospace !important;;background-color:#ffffff;text-align:left;vertical-align:top}
 .band .band-tlzv{font-size:20px;font-family:"Courier New", Courier, monospace !important;;background-color:#ffffff;border-color:#000000;text-align:left;vertical-align:top}
 </style>
+
 <table id="band" class="band" style="display:none;">
   <tr>
     <th class="band-cs3b"><span style="font-weight:bold">Band Pieces</span></th>
@@ -105,19 +106,19 @@
     <td class="band-52hf">Composer</td>
   </tr>
   <tr>
-    <td class="band-g2go">Children's March</td>
+    <td class="band-g2go"><a href="#" onclick="createSheet('band', 'https://drive.google.com/file/d/15oyj60_nK_Pno54gNvwYdBCBeyl3ZFBx/preview')">Children's March</a></td>
     <td class="band-g2go">Percy Grainger</td>
   </tr>
   <tr>
-    <td class="band-tlzv">El Camino Real</td>
+    <td class="band-tlzv"><a href="#" onclick="createSheet('band', 'https://drive.google.com/file/d/1wwehTkxfcThFwBT2Q0Y9uUhUYuIphMG_/preview')">El Camino Real</a></td>
     <td class="band-tlzv">Alfred Reed</td>
   </tr>
   <tr>
-    <td class="band-tlzv">October</td>
+    <td class="band-tlzv"><a href="#" onclick="createSheet('band', 'https://drive.google.com/file/d/16GJE93D2f2WAsddcNQyxkCYaZjN7wCOr/preview')">October</a></td>
     <td class="band-tlzv">Eric Whitacre</td>
   </tr>
   <tr>
-    <td class="band-tlzv">The Hounds of Spring</td>
+    <td class="band-tlzv"><a href="#" onclick="createSheet('band', 'https://drive.google.com/file/d/14NvZF9vswhgvaVTpx9dH6MXMjyEyolF7/preview')">The Hounds of Spring</a></td>
     <td class="band-tlzv">Alfred Reed</td>
   </tr>
 </table>
@@ -272,7 +273,7 @@
     <td class="euph-pik4">Astor Piazolla</td>
   </tr>
   <tr>
-    <td class="euph-pik4"><a href="#" onclick="createSheet('euph', 'https://drive.google.com/file/d/1322-g-gVxK1HDorLuqRro2-Ury35snwZ/preview')">Euphonium Sonata</a>/</td>
+    <td class="euph-pik4"><a href="#" onclick="createSheet('euph', 'https://drive.google.com/file/d/1322-g-gVxK1HDorLuqRro2-Ury35snwZ/preview')">Euphonium Sonata</a></td>
     <td class="euph-pik4">Elaine Fine</td>
   </tr>
   <tr>
@@ -301,6 +302,10 @@
   </tr>
 </table>
 
+<br> </br>
+
+<button id="goback" style="display:none" onclick="vanish()">Make Another Choice</button>
+
 <!--Scripts to hide/unhide the tables--> 
 <script language="javascript">
 function switchTable(x,y) {
@@ -312,8 +317,16 @@ function switchTable(x,y) {
 
 function createSheet(tab,link) {
   var ifrm = document.getElementById('sheetmusic');
-        ifrm.setAttribute("src", link);
-        switchTable(tab, 'sheetmusic');
+  ifrm.setAttribute("src", link);
+  switchTable(tab, 'sheetmusic');
+  var btn = document.getElementById('goback');
+  btn.setAttribute("style", "display:block");
+}
+
+function vanish() {
+  var btn = document.getElementById('goback');
+  btn.setAttribute("style", "display:none");
+  switchTable('sheetmusic','lib');
 }
 
 </script>
