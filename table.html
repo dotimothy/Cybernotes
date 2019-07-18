@@ -17,7 +17,7 @@
     <th class="lib-eez3">Choose Your Instrument:</th>
   </tr>
   <tr>
-    <td class="lib-mce3"><span style="font-weight:bold;color:rgb(255, 199, 2)">Band:</span></td>
+    <td class="lib-mce3"><span style="font-weight:bold;color:rgb(255, 199, 2)"><a href="#" onclick="switchTable('lib','band')">Band:</a></span></td>
   </tr>
   <tr>
     <td class="lib-10l6">Alto Saxophone</td>
@@ -84,6 +84,45 @@
   </tr>
 </table>
 
+<!--Band Tables-->
+<style type="text/css">
+.band  {border-collapse:collapse;border-spacing:0;}
+.band td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.band th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.band .band-cs3b{font-size:28px;font-family:"Courier New", Courier, monospace !important;;background-color:#ffffff;color:#ffc702;border-color:#000000;text-align:left;vertical-align:top}
+.band .band-g2go{font-size:20px;font-family:"Courier New", Courier, monospace !important;;background-color:#ffffff;text-align:left;vertical-align:top}
+.band .band-vh73{font-weight:bold;font-size:28px;font-family:"Courier New", Courier, monospace !important;;background-color:#ffffff;text-align:left;vertical-align:top}
+.band .band-52hf{font-weight:bold;font-size:24px;font-family:"Courier New", Courier, monospace !important;;background-color:#ffffff;text-align:left;vertical-align:top}
+.band .band-tlzv{font-size:20px;font-family:"Courier New", Courier, monospace !important;;background-color:#ffffff;border-color:#000000;text-align:left;vertical-align:top}
+</style>
+<table id="band" class="band" style="display:none;">
+  <tr>
+    <th class="band-cs3b"><span style="font-weight:bold">Band Pieces</span></th>
+    <th class="band-vh73"><a href="#" onclick="switchTable('band','lib')">Choose Another Instrument</a></th>
+  </tr>
+  <tr>
+    <td class="band-52hf">Name</td>
+    <td class="band-52hf">Composer</td>
+  </tr>
+  <tr>
+    <td class="band-g2go">Children's March</td>
+    <td class="band-g2go">Percy Grainger</td>
+  </tr>
+  <tr>
+    <td class="band-tlzv">El Camino Real</td>
+    <td class="band-tlzv">Alfred Reed</td>
+  </tr>
+  <tr>
+    <td class="band-tlzv">October</td>
+    <td class="band-tlzv">Eric Whitacre</td>
+  </tr>
+  <tr>
+    <td class="band-tlzv">The Hounds of Spring</td>
+    <td class="band-tlzv">Alfred Reed</td>
+  </tr>
+</table>
+
+
 <!--Euphonium/Baritone Table-->
 <style type="text/css">
 .euph  {border-collapse:collapse;border-spacing:0;}
@@ -98,7 +137,7 @@
 .euph .euph-ewfm{font-weight:bold;font-size:26px;font-family:"Courier New", Courier, monospace !important;;background-color:#ffffff;color:#000000;border-color:#000000;text-align:left;vertical-align:top}
 .euph .euph-i70v{font-weight:bold;font-size:24px;font-family:"Courier New", Courier, monospace !important;;background-color:#ffffff;border-color:#000000;text-align:left}
 .euph .euph-m7wn{font-size:28px;font-family:"Courier New", Courier, monospace !important;;background-color:#ffffff;color:#fe0000;border-color:#000000;text-align:left}
-.euph .euph-2sng{font-size:32px;font-family:"Courier New", Courier, monospace !important;;background-color:#ffffff;color:#ffcb2f;border-color:#000000;text-align:left}
+.euph .euph-2sng{font-weight:bold;font-size:32px;font-family:"Courier New", Courier, monospace !important;;background-color:#ffffff;color:#ffcb2f;border-color:#000000;text-align:left}
 .euph .euph-tfef{font-size:24px;font-family:"Courier New", Courier, monospace !important;;background-color:#ffffff;border-color:#000000;text-align:left;vertical-align:top}
 .euph .euph-52hf{font-weight:bold;font-size:24px;font-family:"Courier New", Courier, monospace !important;;background-color:#ffffff;text-align:left;vertical-align:top}
 .euph .euph-txk1{font-size:16px;font-family:"Courier New", Courier, monospace !important;;background-color:#ffffff;text-align:left;vertical-align:top}
