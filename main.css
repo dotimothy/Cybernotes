@@ -4,8 +4,19 @@ body {
   font-size: 75%;
 }
 
-video {
-  max-width: 50%;
-  width: 480px;
+#remoteVideo {
+  max-width: 100%;
+  width: 720px;
+}
+
+#localVideo {
+	max-width: 15%;
+	width: 108px;
+}
+
+textarea {
+	width: 300px;
+	height: 300px;
+	border-width: 2px;
 }
 
