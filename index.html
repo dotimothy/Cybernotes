@@ -1,39 +1,98 @@
 <!DOCTYPE html>
+<html>
 
 <head>
-  <title>Cybernotes: Virtual Client Session</title>
+
+  <title>Cybernotes: Video Demo</title>
+
+  <link rel="stylesheet" href="main.css" />
   <link rel="shortcut icon" type="image/png" href="logo.png" />
+
 </head>
 
-<style>
-	 h1 {
-	 text-align: center;
+<body>
+
+	<div id="login" style="display:block;">
+
+  <style>
+   h1 {
+   text-align: center;
    margin-left: auto;
    margin-right: auto;
-	font-family:courier new;
-	}
-	button {
-		text-align: center;
-		font-family: courier new;
-		font-size: 28px;
-	}
-	.vertical-center {
-	  margin: 0;
-	  position: absolute;
-	  top: 50%;
-	  -ms-transform: translateY(-50%);
-	  transform: translateY(-50%);
-	  text-align: center;
-	}
+  font-family:courier new;
+  }
+  button {
+    text-align: center;
+    font-family: courier new;
+    font-size: 28px;
+  }
+  .vertical-center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    text-align: center;
+  }
 </style>
 
-<body>
-	<div class="vertical-center">
-	<img src="logo.png" width="50%">
-	<h1>Cybernotes: Virtual Client Session </h1>
-	<button onclick="enterRoom()">Join Virtual Client</button>
-	</div>
-</body>
+  <div class="vertical-center">
+  <img src="logo.png" width="50%">
+  <h1>Cybernotes: Virtual Client Session </h1>
+  <button onclick="enterRoom()">Join Virtual Client</button>
+  </div>
 
-<script src="room.js"></script>
-</html>
+	</div>
+
+  <div id="demo" style="display:none;">
+
+  <h1>Cybernotes Video Demo!</h1>
+  <h1> Be in the call, then wait for the client to show up and say hi!
+
+    <div id="interface">
+      <video id="localVideo" autoplay muted playsinline></video>
+      <video id="remoteVideo" autoplay playsinline></video>
+      <embed src="table.html" width="40%" height="500px" style="float:left;">
+    </div>
+
+    <br></br>
+
+    <button onclick="showRemote()">Start Call</button>
+    <button onclick="hangup()">End Call</button>
+
+    <br></br>
+
+    <h1>Metronome & Tuner: </h1>
+     <embed src="metronome/index.html" width="50%" height="200px" style="float:left;">
+    <embed src="tuner/index.html" width="50%" height="200px" style="float:left;">
+
+    <textarea id="dataChannelSend"
+    placeholder="Welcome to the Cybernotes Chat Box!"></textarea>
+    <textarea id="dataChannelReceive"></textarea>
+    <div id="buttons">
+      <button id="startButton">Start</button>
+      <button id="sendButton">Send</button>
+      <button id="closeButton">Stop</button>
+      <br> </br>
+    </div>
+
+    </div>
+
+      <!--Scripts for Demo-->
+      <script src="room.js"></script>
+      <script src="/socket.io/socket.io.js"></script>
+      <script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
+      <script src="main.js"></script>
+      <!--Tuner Scripts-->
+      <script src="https://cdn.bootcss.com/sweetalert/2.1.0/sweetalert.min.js"></script>
+      <script src="aubio.js"></script>
+      <script src="tuner.js"></script>
+      <script src="meter.js"></script>
+      <script src="frequency-bars.js"></script>
+      <script src="notes.js"></script>
+      <script src="app.js"></script>
+
+
+    </body>
+
+    </html>
