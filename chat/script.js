@@ -1,20 +1,15 @@
-const possibleEmojis = [
-  '🐀','🐁','🐭','🐹','🐂','🐃','🐄','🐮','🐅','🐆','🐯','🐇','🐐','🐑','🐏','🐴',
-  '🐎','🐱','🐈','🐰','🐓','🐔','🐤','🐣','🐥','🐦','🐧','🐘','🐩','🐕','🐷','🐖',
-  '🐗','🐫','🐪','🐶','🐺','🐻','🐨','🐼','🐵','🙈','🙉','🙊','🐒','🐉','🐲','🐊',
-  '🐍','🐢','🐸','🐋','🐳','🐬','🐙','🐟','🐠','🐡','🐚','🐌','🐛','🐜','🐝','🐞',
-];
+const possibleEmojis = ['🎼','🎹','🎵','🎶','🎺','🎧','🎻','🎷','🎸','🥁','🎤','🎙','🎭'];
 function randomEmoji() {
   var randomIndex = Math.floor(Math.random() * possibleEmojis.length);
   return possibleEmojis[randomIndex];
 }
 
 const emoji = randomEmoji();
-const name = prompt("What's your name?");
+const name = prompt("Enter your Name:");
 
 // Generate random chat hash if needed
 if (!location.hash) {
-  location.hash = Math.floor(Math.random() * 0xFFFFFF).toString(16);
+  location.hash = 'euphonium';
 }
 const chatHash = location.hash.substring(1);
 

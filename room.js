@@ -6,11 +6,12 @@ function enterRoom() {
 	if(name = "euphonium" && password == "euphonium") {
 		login.setAttribute("style","display:none");
 		demo.setAttribute("style","display:block");
+		return name;
 	}
 	else if(input != "") {
 		alert("Wrong room name/password. Please try again");
 	}
 	else {
-		return;
+		return;	
 	}
 }
