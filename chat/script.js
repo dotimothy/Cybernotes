@@ -7,6 +7,7 @@ function randomEmoji() {
 const emoji = randomEmoji();
 const name = prompt("Enter your Name:");
 
+
 // Generate random chat hash if needed
 if (!location.hash) {
   location.hash = 'euphonium';
@@ -16,7 +17,7 @@ const chatHash = location.hash.substring(1);
 // TODO: Replace with your own channel ID
 const drone = new ScaleDrone('yiS12Ts5RdNhebyM');
 // Scaledrone room name needs to be prefixed with 'observable-'
-const roomName = 'observable-' + chatHash;
+const roomName = 'euphonium';
 // Scaledrone room used for signaling
 let room;
 

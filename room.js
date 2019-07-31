@@ -9,7 +9,7 @@ function enterRoom() {
 		return name;
 	}
 	else if(input != "") {
-		alert("Wrong room name/password. Please try again");
+		 return alert("Wrong room name/password. Please try again");
 	}
 	else {
 		return;	

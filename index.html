@@ -14,18 +14,7 @@
 
 	<div id="login" style="display:inline-block;">
 
-  <style>
-  button {
-    text-align: center;
-    font-family: courier new;
-    font-size: 28px;
-  }
-  .vertical-center {
-    margin: 0 auto;
-  }
-</style>
-
-  <div class="vertical-center">
+  <div class="vertical-center" style="display:block;">
   <img src="logo.png" width="50%">
   <h1>Cybernotes: Virtual Client Session </h1>
   <button onclick="enterRoom()">Join Virtual Client</button>
@@ -36,25 +25,29 @@
   <div id="demo" style="display:none;">
 
   <h1>Cybernotes Video Demo!</h1>
-  <h1> Be in the call, then wait for the client to show up and say hi!
+  <h1> Be in the call, then wait for the client to show up and say hi! </h1>
 
-    <div id="interface">
+    <div id="interface" style="display:inline-block;">
       <video id="localVideo" autoplay muted playsinline></video>
       <video id="remoteVideo" autoplay playsinline></video>
-      <embed src="table.html" width="50%" height="500px" style="float:right;">
+      <div style="display:block;">
+      <button onclick="showRemote()">Start Call</button>
+      <button onclick="hangup()">End Call</button>
+      </div>
     </div>
 
-    <br></br>
+    <div style="display:inline-block;">
+    <embed src="table.html" width="100%" height="400px">
+    </div>
 
-    <button onclick="showRemote()">Start Call</button>
-    <button onclick="hangup()">End Call</button>
 
     <br></br>
 
     <h1>Metronome & Tuner: </h1>
      <embed src="metronome/index.html" width="50%" height="200px" style="float:left;">
     <embed src="tuner/index.html" width="50%" height="200px" style="float:left;">
-    <embed src="chat/index.html" width="100%" height="450px" style="float:left;">
+    <br> </br>
+    <embed src="chat/index.html" width="50%" height="450px" style="float:left;">
       <br> </br>
     </div>
 
