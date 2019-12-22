@@ -10,8 +10,8 @@ body {
 }
 
 #localVideo {
-	max-width: 15%;
-	width: 108px;
+	max-width: 45%;
+	width: 480px;
 }
 
 textarea {
