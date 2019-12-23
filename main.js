@@ -243,6 +243,8 @@ function hangup() {
   console.log('Hanging up.');
   stop();
   sendMessage('bye');
+  document.getElementById('localVideo').remove();
+  document.getElementById('remoteVideo').remove();
 }
 
 function handleRemoteHangup() {
